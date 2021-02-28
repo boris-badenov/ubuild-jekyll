@@ -18,6 +18,13 @@ sections:
   match: "*.md"
   exclude: "*README.md"
   new_doc_ext: md
+- type: directory
+  path: some
+  label: Some directory
+  create: all
+  match: "**/*"
+  templates:
+  - content-feature
 - type: document
   path: _config.yml
   label: Config
